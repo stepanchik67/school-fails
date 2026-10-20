@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Визитка школьного IT-клуба</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 2. Семантическая шапка с навигацией -->
+    <header>
+        <nav>
+            <a href="#main">Главная</a>
+            <a href="#about">О клубе</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#signup">Запись</a>
+        </nav>
+    </header>
+
+    <!-- 3. Основной раздел с заголовком и секциями -->
+    <!-- Добавлен id="main" для работы первой ссылки -->
+    <main id="main">
+        <h1>Добро пожаловать в школьный IT-клуб!</h1>
+
+        <!-- 4. Первая секция: список направлений и изображение -->
+        <!-- Добавлен id="about" -->
+        <section id="about">
+            <h2>Наши направления</h2>
+            <ul>
+                <li>Python</li>
+                <li>Веб-дизайн</li>
+                <li>Робототехника</li>
+            </ul>
+            <figure>
+                <img src="images/it_club.jpg" alt="Участники IT-клуба за работой над проектами">
+                <figcaption>Наши ребята на занятии по робототехнике</figcaption>
+            </figure>
+        </section>
+
+        <!-- 5. Вторая секция: таблица расписания -->
+        <!-- Добавлен id="schedule" -->
+        <section id="schedule">
+            <h2>Расписание занятий</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Дни</th>
+                        <th>Время</th>
+                        <th>Кабинет</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Понедельник</td>
+                        <td>15:00 - 17:00</td>
+                        <td>Каб. 204</td>
+                    </tr>
+                    <tr>
+                        <td>Среда</td>
+                        <td>16:00 - 18:00</td>
+                        <td>Каб. 301</td>
+                    </tr>
+                    <tr>
+                        <td>Пятница</td>
+                        <td>15:30 - 17:30</td>
+                        <td>Каб. 204</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 6. Третья секция: интерактивная форма записи -->
+        <!-- Добавлен id="signup" -->
+        <section id="signup">
+            <h2>Запись в клуб</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="class">Класс:</label>
+                    <input type="text" id="class" name="class" required>
+                </p>
+                <p>
+                    <label for="course">Направление:</label>
+                    <select id="course" name="course">
+                        <option value="python">Python</option>
+                        <option value="web">Веб-дизайн</option>
+                        <option value="robotics">Робототехника</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Согласие на обработку персональных данных</label>
+                </p>
+                <p>
+                    <button type="submit">Отправить заявку</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- 7. Подвал с копирайтом и email -->
+    <footer>
+        <p>&copy; 2026 Школьный IT-клуб. Все права защищены.</p>
+        <p>Свяжитесь с нами: <a href="mailto:itclub@school.ru">itclub@school.ru</a></p>
+    </footer>
+
+</body>
+</html>
